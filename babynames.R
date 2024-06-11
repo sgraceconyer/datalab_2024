@@ -38,3 +38,4 @@ ggplot(data = bbnames_2002, aes(x=name,y=n))+
 the_nineties<-bb_names %>% 
   filter(year<=1999,year>=1990)
     
+write_csv(the_nineties, file = 'bbnames_nineties.csv')
